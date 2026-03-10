@@ -14,8 +14,28 @@ int main() {
   double pib;
   int pontosTuristicos;
   
+   printf("---Cadrasto de carta Super Trunfo---\n");
 
   // Área para entrada de dados
+   printf("Dijite o Estado (A-H):" );
+   scanf("%s", &estado); 
+
+   printf("Dijite o código da Carta (ex: A01): ");
+   scanf("%f", &codigo);
+
+   printf("Nome da Cidade: ");
+   scanf("%[^\n]s", nomeCidade ); //lê nome com espaços
+    
+
+   printf("População: ");
+   scanf("%1u", &populacao);
+
+   printf("Àrea (km²): ");
+   scanf("%f", &area);
+
+   printf("Número de Pontos Turisticos: ");
+   scanf("%1u", &pontosTuristicos);
+
 
   // Área para exibição dos dados da cidade
 
