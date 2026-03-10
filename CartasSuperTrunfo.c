@@ -6,38 +6,38 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char estado[1];
-  char codigo[4];
-  char nomeCidade[50];
-  unsigned long int populacao;
-  float area;
-  double pib;
-  int pontosTuristicos;
+  char estado1[1];
+  char codigo1[4];
+  char nomeCidade1[50];
+  unsigned long int populacao1;
+  float area1;
+  double pib1;
+  int pontosTuristicos1;
   
    printf("---Cadrasto de carta Super Trunfo---\n");
 
   // Área para entrada de dados
    printf("Dijite o Estado (A-H):" );
-   scanf("%s", &estado); 
+   scanf("%s", &estado1); 
 
    printf("Dijite o código da Carta (ex: A01): ");
-   scanf("%f", &codigo);
+   scanf("%f", &codigo1);
 
    printf("Nome da Cidade: ");
-   scanf("%[^\n]s", nomeCidade ); //lê nome com espaços
+   scanf("%[^\n]s", nomeCidade1); //lê nome com espaços
     
 
    printf("População: ");
-   scanf("%1u", &populacao);
+   scanf("%1u", &populacao1);
 
    printf("Àrea (km²): ");
-   scanf("%f", &area);
+   scanf("%f", &area1);
 
    printf("Número de Pontos Turisticos: ");
-   scanf("%1u", &pontosTuristicos);
+   scanf("%lu", &pontosTuristicos1);
 
 
   // Área para exibição dos dados da cidade
-
+   
 return 0;
 } 
