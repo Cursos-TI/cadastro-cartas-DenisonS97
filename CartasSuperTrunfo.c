@@ -18,6 +18,7 @@
     
    // Leitura dos Dados (Carta 1)---
    printf("Dijite os dados da Carta 1:\n");
+
    printf("Estado (A-H): ");
    scanf(" %c", &estado1); 
 
@@ -25,13 +26,13 @@
    scanf("%s", &codigo1); 
 
    printf("Nome da Cidade: ");
-   scanf("%[^\n]s", nomeCidade1); // Lê nomes com espaços
+   scanf("%s\n", nomeCidade1); // Agora em lina própia
 
    printf("População: ");
-   scanf("%lu", &populacao1);
+   scanf("%lu\n", &populacao1); // Agora em linha própia
 
    printf("Àrea (km²): ");
-   scanf("%2.f", &area1); 
+   scanf("%2.f km²", &area1); 
 
    printf("PIB: "); 
    scanf("%2.f", &pib1);
@@ -44,6 +45,7 @@
 
    // Leitura dos Dados (Carta 2)---
    printf("Dijite os dados da Carta 2:\n");
+
    printf("Estado (A-H): ");
    scanf(" %c", &estado2);
 
@@ -51,19 +53,19 @@
    scanf("%s", &codigo2);
 
    printf("Nome da Cidade: ");
-   scanf("%[^\n]s", nomeCidade2);
+   scanf("%s\n", nomeCidade2); // Agora em linha própia
 
    printf("População: ");
-   scanf("%lu", &populacao2);
+   scanf("%lu\n", &populacao2); // Agora em linha própia
 
    printf("Àrea (km²): ");
-   scanf("%2.f", &area2);
+   scanf("%2.f km²", &area2);
 
    printf("PIB: ");
    scanf("%2.f", &pib2);
 
    printf("Pontos Turisticos: ");
-   scanf("%d", &pontosTuristicos2);
+   scanf("%d\n", &pontosTuristicos2);
 
 
   //Exibição Carta 1
@@ -71,20 +73,28 @@
 
    // Lê e Exibe o Estado e Código Dijitado.
    printf("Estado: %c - Código: %s\n", estado1, codigo1);
+
    // Lê e Exibe o Nome da Cidade Dijitada.
    printf("Cidade: %s\n", nomeCidade1);
+
    // Lê e Exibe a População e Àrea Dijitada.
    printf("População: %lu - Área: %2.f km²\n", populacao1, area1);
+
    // Lê  e Exibe o PIB e Pontos Turísticos Dijitados.
    printf("PIB: %2.f - Pontos Turísticos: %d\n", pib1, pontosTuristicos1);
+
    // Exibição Carta 2.
    printf("Carta 2: \n");
+
    // Lê e Exibe o Estado e Código Dijitado.
    printf("Estado: %c - Código: %s\n", estado2, codigo2);
+
    // Lê e Exibe o Nome da Cidade Dijitada.
    printf("Cidade: %s\n", nomeCidade2);
+
    // Lê e Exibe a População e Àrea Dijitada.
    printf("População: %lu - Área: %2.f km²\n", populacao2, area2);
+
    // Lê  e Exibe o PIB e Pontos Turísticos Dijitados.
    printf("PIB: %2.f - Pontos Turísticos: %d\n", pib2, pontosTuristicos2);
 
