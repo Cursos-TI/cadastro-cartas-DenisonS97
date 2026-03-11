@@ -6,99 +6,69 @@
 
  int main() {
   // Declaração de varíaveis para duas cartas (Carta 1 e Carta 2)---
-  char estado1, estado2;
-  char codigo1[4], codigo2[4];
-  char nomeCidade1[50], nomeCidade2[50];
+  char estado1[2], estado2[2], codigo1[4], codigo2[4];
+  char nome1[50], nome2[50];
   unsigned long int populacao1, populacao2;
   float area1, area2, pib1, pib2;
-  int pontosTuristicos1, pontosTuristicos2;
+  int pontos1, pontos2;
 
-   // Cadastro da Carta (Carta 1)---
+   // Cadastro da Carta 1
    printf("--- Cadrasto de Carta 1 ---\n");
     
    // Leitura dos Dados (Carta 1)---
    printf("Dijite os dados da Carta 1:\n");
 
    printf("Estado (A-H): ");
-   scanf(" %c", &estado1); 
+   scanf("%c", estado1); 
 
-   printf("Código (ex: A01): ");
-   scanf("%s", &codigo1); 
+   printf("Código: ");
+   scanf("%s", codigo1); 
 
    printf("Nome da Cidade: ");
-   scanf("%s\n", nomeCidade1); // Agora em lina própia
+   scanf("%s", nome1); // Agora em lina própia
 
    printf("População: ");
-   scanf("%lu\n", &populacao1); // Agora em linha própia
+   scanf("%lu", &populacao1); // Agora em linha própia
 
    printf("Àrea (km²): ");
-   scanf("%2.f km²", &area1); 
+   scanf("%f", &area1); 
 
    printf("PIB: "); 
-   scanf("%2.f", &pib1);
+   scanf("%f", &pib1);
 
    printf("Pontos Turisticos: ");
-   scanf("%d\n", &pontosTuristicos1);
+   scanf("%d", &pontos1);
 
-   // Cadrasto da Carta (Carta 2)---
+   // Cadrasto da Carta 2---
    printf("\n--- Cadrsto da Carta 2 ---\n");
-
-   // Leitura dos Dados (Carta 2)---
-   printf("Dijite os dados da Carta 2:\n");
-
    printf("Estado (A-H): ");
-   scanf(" %c", &estado2);
+   scanf("%c", estado2);
 
-   printf("Código (ex: A02): ");
-   scanf("%s", &codigo2);
+   printf("Código: ");
+   scanf("%s", codigo2);
 
    printf("Nome da Cidade: ");
-   scanf("%s\n", nomeCidade2); // Agora em linha própia
+   scanf("%s", nome2); // Agora em linha própia
 
    printf("População: ");
-   scanf("%lu\n", &populacao2); // Agora em linha própia
+   scanf("%lu", &populacao2); // Agora em linha própia
 
    printf("Àrea (km²): ");
-   scanf("%2.f km²", &area2);
+   scanf("%f", &area2);
 
    printf("PIB: ");
-   scanf("%2.f", &pib2);
+   scanf("%f", &pib2);
 
    printf("Pontos Turisticos: ");
-   scanf("%d\n", &pontosTuristicos2);
+   scanf("%d", &pontos2);
 
 
-  //Exibição Carta 1
-   printf("Carta 1: \n");
+  //Exibição dos Dados
+   printf("Carta 1: %s  %s - %s", estado1, codigo1, nome1);
+   printf("População: %lu\n, Àrea: %.2f\n, PIB: %.2f\n, Pontos: %d\n", populacao1, area1, pib1, pontos1);
 
-   // Lê e Exibe o Estado e Código Dijitado.
-   printf("Estado: %c - Código: %s\n", estado1, codigo1);
-
-   // Lê e Exibe o Nome da Cidade Dijitada.
-   printf("Cidade: %s\n", nomeCidade1);
-
-   // Lê e Exibe a População e Àrea Dijitada.
-   printf("População: %lu - Área: %2.f km²\n", populacao1, area1);
-
-   // Lê  e Exibe o PIB e Pontos Turísticos Dijitados.
-   printf("PIB: %2.f - Pontos Turísticos: %d\n", pib1, pontosTuristicos1);
-
-   // Exibição Carta 2.
-   printf("Carta 2: \n");
-
-   // Lê e Exibe o Estado e Código Dijitado.
-   printf("Estado: %c - Código: %s\n", estado2, codigo2);
-
-   // Lê e Exibe o Nome da Cidade Dijitada.
-   printf("Cidade: %s\n", nomeCidade2);
-
-   // Lê e Exibe a População e Àrea Dijitada.
-   printf("População: %lu - Área: %2.f km²\n", populacao2, area2);
-
-   // Lê  e Exibe o PIB e Pontos Turísticos Dijitados.
-   printf("PIB: %2.f - Pontos Turísticos: %d\n", pib2, pontosTuristicos2);
-
-
-
+   printf("\nCarta 2: %c   %s - %s\n",estado2, codigo2, nome2);
+   printf("População: %lu, Àrea: %.2f, PIB: %.2f, Pontos: %d\n", populacao2, area2, pib2, pontos2);
+   
 return 0;
 } 
